@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма заказа</title>
+  </head>
+  <body>
+    <a href="../../index.html">Назад</a>
+    <form>
+      <fieldset>
+        <legend>Personal info</legend>
+
+        <div>
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+
+        <div>
+          <label>Last Name</label>
+          <input type="text" />
+        </div>
+
+        <div>
+          <label>Birthday</label>
+          <input type="text" placeholder="DD.MM.YYYY" />
+        </div>
+
+        <div class="gender">
+          <label class="genderLabel">Gender</label>
+          <div>
+            <label>Male <input type="radio" name="g" /></label>
+            <label>Female <input type="radio" name="g" /></label>
+          </div>
+        </div>
+
+        <div>
+          <label>Drive experience</label>
+          <select>
+            <option>---</option>
+            <option>1 год</option>
+            <option>2–3 года</option>
+            <option>более 3 лет</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contacts</legend>
+
+        <div>
+          <label>Email</label>
+          <input type="email" />
+        </div>
+
+        <div>
+          <label>Phone</label>
+          <input type="tel" />
+        </div>
+
+        <div>
+          <label class="top">Address</label>
+          <textarea></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Car info</legend>
+
+        <div>
+          <label>Brand</label>
+          <select>
+            <option>---</option>
+          </select>
+        </div>
+        <div>
+          <label>Model</label>
+          <select>
+            <option>---</option>
+          </select>
+        </div>
+
+        <div>
+          <label><input type="checkbox" /> Used</label>
+        </div>
+
+        <div>
+          <label>Color</label>
+          <label>Red <input type="radio" name="c" checked /></label>
+          <label>Black <input type="radio" name="c" /></label>
+          <label>Blue <input type="radio" name="c" /></label>
+          <label>White <input type="radio" name="c" /></label>
+          <label>Grey <input type="radio" name="c" /></label>
+        </div>
+
+        <div>
+          <label>Price</label>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="35"
+            step="10"
+            list="price-list"
+          />
+          <datalist>
+            <option value="10" label="10k"></option>
+            <option value="20" label="20k"></option>
+            <option value="30" label="30k"></option>
+            <option value="40" label="40k"></option>
+            <option value="50" label="50k"></option>
+            <option value="60" label="60k"></option>
+            <option value="70" label="70k"></option>
+            <option value="80" label="80k"></option>
+            <option value="90" label="90k"></option>
+            <option value="100" label="100k"></option>
+          </datalist>
+        </div>
+      </fieldset>
+    </form>
+    <button>Cancel</button>
+    <button>Ok</button>
+  </body>
+</html>
