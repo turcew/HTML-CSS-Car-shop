@@ -4,4 +4,13 @@ html {
 
 table {
   text-align: center;
+  border: 1px solid cyan;
+  max-width: 520px;
+  margin: 40px auto;
+}
+
+td,
+th {
+  border: 2px solid cyan;
+  font-weight: bold;
 }
