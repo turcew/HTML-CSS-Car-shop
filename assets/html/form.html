@@ -26,8 +26,8 @@
           <input type="text" placeholder="DD.MM.YYYY" />
         </div>
 
-        <div class="gender">
-          <label class="genderLabel">Gender</label>
+        <div>
+          <label>Gender</label>
           <div>
             <label>Male <input type="radio" name="g" /></label>
             <label>Female <input type="radio" name="g" /></label>
@@ -59,7 +59,7 @@
         </div>
 
         <div>
-          <label class="top">Address</label>
+          <label>Address</label>
           <textarea></textarea>
         </div>
       </fieldset>
@@ -103,7 +103,8 @@
             step="10"
             list="price-list"
           />
-          <datalist>
+          <datalist id="price-list">
+            <option value="0" label="0"></option>
             <option value="10" label="10k"></option>
             <option value="20" label="20k"></option>
             <option value="30" label="30k"></option>
