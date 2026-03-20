@@ -14,3 +14,43 @@ th {
   border: 2px solid cyan;
   font-weight: bold;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+}
+
+fieldset {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+form > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+fieldset > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+form > div > input {
+  width: 60px;
+  height: 25px;
+  margin: 10px;
+}

@@ -4,121 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Форма заказа</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <a href="../../index.html">Назад</a>
     <form>
-      <fieldset>
-        <legend>Personal info</legend>
+      <h1>Home work for CSS flexbox</h1>
+      <div>
+        <fieldset>
+          <legend>Personal info</legend>
 
-        <div>
-          <label>First Name</label>
-          <input type="text" />
-        </div>
-
-        <div>
-          <label>Last Name</label>
-          <input type="text" />
-        </div>
-
-        <div>
-          <label>Birthday</label>
-          <input type="text" placeholder="DD.MM.YYYY" />
-        </div>
-
-        <div>
-          <label>Gender</label>
           <div>
+            <label>First Name</label>
+            <input type="text" />
+          </div>
+
+          <div>
+            <label>Last Name</label>
+            <input type="text" />
+          </div>
+
+          <div>
+            <label>Birthday</label>
+            <input type="text" placeholder="DD.MM.YYYY" />
+          </div>
+
+          <div>
+            <label>Gender</label>
             <label>Male <input type="radio" /></label>
             <label>Female <input type="radio" /></label>
           </div>
-        </div>
 
-        <div>
-          <label>Drive experience</label>
-          <select>
-            <option>---</option>
-            <option>1 год</option>
-            <option>2–3 года</option>
-            <option>более 3 лет</option>
-          </select>
-        </div>
-      </fieldset>
+          <div>
+            <label>Drive experience</label>
+            <select>
+              <option>---</option>
+              <option>1 год</option>
+              <option>2–3 года</option>
+              <option>более 3 лет</option>
+            </select>
+          </div>
+        </fieldset>
 
-      <fieldset>
-        <legend>Contacts</legend>
+        <fieldset>
+          <legend>Contacts</legend>
 
-        <div>
-          <label>Email</label>
-          <input type="email" />
-        </div>
+          <div>
+            <label>Email</label>
+            <input type="email" />
+          </div>
 
-        <div>
-          <label>Phone</label>
-          <input type="tel" />
-        </div>
+          <div>
+            <label>Phone</label>
+            <input type="tel" />
+          </div>
 
-        <div>
-          <label>Address</label>
-          <textarea></textarea>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>Car info</legend>
+          <div>
+            <label>Address</label>
+            <textarea></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Car info</legend>
 
-        <div>
-          <label>Brand</label>
-          <select>
-            <option>---</option>
-          </select>
-        </div>
-        <div>
-          <label>Model</label>
-          <select>
-            <option>---</option>
-          </select>
-        </div>
+          <div>
+            <label>Brand</label>
+            <select>
+              <option>---</option>
+            </select>
+          </div>
+          <div>
+            <label>Model</label>
+            <select>
+              <option>---</option>
+            </select>
+          </div>
 
-        <div>
-          <label><input type="checkbox" /> Used</label>
-        </div>
+          <label>Used <input type="checkbox" /></label>
 
-        <label>Color</label>
+          <label>Color</label>
 
-        <div>
-          <label>Red <input type="radio" checked /></label>
-          <label>Black <input type="radio" /></label>
-          <label>Blue <input type="radio" /></label>
-          <label>White <input type="radio" /></label>
-          <label>Grey <input type="radio" /></label>
-        </div>
-
-        <div>
+          <div>
+            <label>Red <input type="radio" checked /></label>
+            <label>Black <input type="radio" /></label>
+            <label>Blue <input type="radio" /></label>
+            <label>White <input type="radio" /></label>
+            <label>Grey <input type="radio" /></label>
+          </div>
           <label>Price</label>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="35"
-            step="10"
-            list="price-list"
-          />
-          <datalist id="price-list">
-            <option value="0" label="0"></option>
-            <option value="10" label="10k"></option>
-            <option value="20" label="20k"></option>
-            <option value="30" label="30k"></option>
-            <option value="40" label="40k"></option>
-            <option value="50" label="50k"></option>
-            <option value="60" label="60k"></option>
-            <option value="70" label="70k"></option>
-            <option value="80" label="80k"></option>
-            <option value="90" label="90k"></option>
-            <option value="100" label="100k"></option>
-          </datalist>
-        </div>
-      </fieldset>
-
+          <div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="35"
+              step="10"
+              list="price-list"
+            />
+            <datalist id="price-list">
+              <option value="0" label="0">0</option>
+              <option value="10" label="10k">10</option>
+              <option value="20" label="20k">20</option>
+              <option value="30" label="30k">30</option>
+              <option value="40" label="40k">40</option>
+              <option value="50" label="50k">50</option>
+              <option value="60" label="60k">60</option>
+              <option value="70" label="70k">70</option>
+              <option value="80" label="80k">80</option>
+              <option value="90" label="90k">90</option>
+              <option value="100" label="100k">100</option>
+            </datalist>
+          </div>
+        </fieldset>
+      </div>
       <div>
         <input type="reset" value="Cancel" />
         <input type="submit" value="Ok" />
